@@ -32,7 +32,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  double _size = 50;
+  double _size = 508;
   bool _isPressed = false;
 
   void pressIn() {
