@@ -20,7 +20,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyHomePage(),
+      routes: {
+        '/' : (context) => MyHomePage()
+      },
     );
   }
 }
@@ -32,7 +34,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  double _size = 508;
+  double _size = 50;
   bool _isPressed = false;
 
   void pressIn() {
@@ -67,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
           },
           onTap: () {
             pressIn();
-            Timer(Duration(milliseconds: 117), ()
+            Timer(Duration(milliseconds: 137), ()
             {
               pressOut();
             },);
@@ -75,8 +77,8 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Container(
             child: Center(
                 child: SizedBox(
-                    width: 50,
-                    height: 50,
+                    width: 200,
+                    height: 200,
                     child: Icon(
                       Icons.apple_outlined,
                       color: Colors.grey[400],
