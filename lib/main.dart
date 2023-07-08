@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart' hide BoxDecoration, BoxShadow;
 import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       routes: {
-        '/' : (context) => MyHomePage()
+        '/' : (context) => MyHomePage(),
       },
     );
   }
